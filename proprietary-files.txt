@@ -1277,6 +1277,11 @@ vendor/bin/cnss-daemon
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 
+# WiFi (configs)
+vendor/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+
 # WiFi Display
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice

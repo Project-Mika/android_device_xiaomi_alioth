@@ -79,6 +79,17 @@ vendor/lib/libfcsam.so
 vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 
+# Audio configs
+vendor/etc/audio_io_policy.conf
+vendor/etc/audio_platform_info_intcodec.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/audio_tuning_mixer.txt
+vendor/etc/mixer_paths.xml
+vendor/etc/mixer_paths_overlay_dynamic.xml
+vendor/etc/mixer_paths_overlay_static.xml
+vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_platform_info.xml
+
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so

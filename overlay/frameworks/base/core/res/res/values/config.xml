@@ -479,8 +479,8 @@
     <array name="config_sfps_sensor_props_0" translatable="false">
         <item>local:4630946736638489729</item>
         <item>1080</item>
-        <item>965</item>
-        <item>115</item>
+        <item>963</item>
+        <item>117</item>
     </array>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->

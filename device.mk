@@ -404,8 +404,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.xiaomi.rc \
     fstab.qcom \
-    fstab.qcom_ramdisk \
     ueventd.qcom.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 # Sensors
 PRODUCT_PACKAGES += \

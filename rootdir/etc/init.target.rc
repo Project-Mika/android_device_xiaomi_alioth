@@ -167,3 +167,9 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 
 on property:vendor.dcvs.prop=1
    start dcvs-sh
+
+on property:sys.boot_completed=1
+    # Read only one page at a time
+    write /proc/sys/vm/page-cluster 0
+    # Mount swap partitions specified in fstab
+    swapon_all /vendor/etc/fstab.qcom

@@ -70,6 +70,9 @@ EOF
         vendor/etc/mixer_paths_overlay_static.xml)
             sed -i 's\<ctl name="Mi_Ultrasound Suspend" value="1"/>>\<ctl name="Mi_Ultrasound Suspend" value="1"/>\g' "${2}"
             ;;
+        vendor/lib64/camera/components/com.mi.node.watermark.so )
+            ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
+            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "9A 0A 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;

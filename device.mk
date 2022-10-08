@@ -224,8 +224,14 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti \
+    libbatching \
+    libgeofencing \
+    libgnss \
+    libgps.utils \
+    libloc_core \
+    liblocation_api
 
 # Health
 PRODUCT_PACKAGES += \
